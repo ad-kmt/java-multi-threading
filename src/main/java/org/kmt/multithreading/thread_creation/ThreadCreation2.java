@@ -1,4 +1,4 @@
-package org.kmt.multithreading.threadCreation;
+package org.kmt.multithreading.thread_creation;
 
 public class ThreadCreation2 {
 

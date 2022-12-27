@@ -1,4 +1,4 @@
-package org.kmt.multithreading.threadInterruption;
+package org.kmt.multithreading.thread_interruption;
 
 import java.math.BigInteger;
 

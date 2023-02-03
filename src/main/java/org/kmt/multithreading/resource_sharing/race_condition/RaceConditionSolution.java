@@ -1,6 +1,6 @@
-package org.kmt.multithreading.resource_sharing;
+package org.kmt.multithreading.resource_sharing.race_condition;
 
-public class RaceConditionExample {
+public class RaceConditionSolution {
 
     public static void main(String[] args) throws InterruptedException {
         InventoryCounter inventoryCounter = new InventoryCounter();
@@ -53,11 +53,11 @@ public class RaceConditionExample {
     private static class InventoryCounter{
         private int items = 0;
 
-        public void increment(){
+        public synchronized void increment(){
             items++;
         }
 
-        public void decrement(){
+        public synchronized void decrement(){
             items--;
         }
 

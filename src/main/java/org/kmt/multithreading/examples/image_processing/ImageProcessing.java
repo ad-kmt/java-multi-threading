@@ -5,6 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.Buffer;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ImageProcessing {
 
@@ -14,11 +16,46 @@ public class ImageProcessing {
     public static void main(String[] args) throws IOException {
         BufferedImage originalImage = ImageIO.read(new File(SOURCE_FILE));
         BufferedImage resultImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);
-        recolorSingleThreaded(originalImage, resultImage);
+
+        long startTime = System.currentTimeMillis();
+//        recolorSingleThreaded(originalImage, resultImage);
+        recolorMultithreaded(originalImage, resultImage, 1);
+        long endTime = System.currentTimeMillis();
+
         File outputFile = new File(DESTINATION_FILE);
         ImageIO.write(resultImage, "jpg", outputFile);
+
+
+        long duration = endTime - startTime;
+        System.out.println("Time taken: " + duration);
     }
 
+    public static void recolorMultithreaded(BufferedImage originalImage, BufferedImage resultImage, int numberOfThreads){
+        List<Thread> threads = new ArrayList<>();
+        int width = originalImage.getWidth();
+        int height = originalImage.getHeight()/numberOfThreads;
+        for(int i=0; i<numberOfThreads; i++){
+            final int threadMultiplier = i;
+            Thread thread = new Thread(() -> {
+                int leftCorner = 0;
+                int topCorner = height*threadMultiplier;
+                recolorImage(originalImage, resultImage, leftCorner, topCorner, width, height);
+            });
+            threads.add(thread);
+        }
+
+        for(Thread thread : threads){
+            thread.start();
+        }
+
+        for(Thread thread : threads){
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 
     public static void recolorSingleThreaded(BufferedImage originalImage, BufferedImage resultImage){
         recolorImage(originalImage, resultImage, 0, 0, originalImage.getWidth(), originalImage.getHeight());

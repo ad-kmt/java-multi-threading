@@ -35,6 +35,8 @@ A process provides an isolated environment for the execution of a program, ensur
 #### Threads
 A thread, also known as a lightweight process, is the smallest unit of execution within a process. A thread shares the process's resources, such as memory and file handles, but has its own execution context, including the program counter, register values, and stack.
 
+[![Process and Threads](https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/images/Chapter4/4_01_ThreadDiagram.jpg "Process and Threads")](https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html "Process and Threads")
+
 #### Relationship
 **Multithreading**: A single process can contain multiple threads, all running concurrently within the same address space. Multithreading allows a process to perform multiple tasks simultaneously, improving the efficiency and responsiveness of applications.
 

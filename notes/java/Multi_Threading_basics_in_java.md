@@ -71,3 +71,7 @@ Some important methods in the Thread class are:
 `thread.sleep(long millis)`: Makes the current thread sleep for the specified milliseconds.
 `thread.join()`: Waits for the thread to finish.
 `thread.interrupt()`: Interrupts the thread.
+
+[Thread Methods Comprehensive list](https://www.javatpoint.com/multithreading-in-java "Thread Methods list")
+
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Hco-SKZnnC0jgAa83q3ldQ.png)

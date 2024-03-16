@@ -28,6 +28,11 @@ A deadlock is a situation in a multithreading environment where two or more thre
 
 Starvation is a problem in multithreaded environments where one or more threads are perpetually denied access to shared resources or the CPU, preventing them from making progress in their execution. 
 
+## Livelock
+
+Livelock is a situation in concurrent programming where two or more threads are actively responding to each other's actions, but none can make progress and complete their tasks.
+
+
 ## Preemption
 Preemption is a fundamental concept in multitasking and multithreading environments where multiple tasks or threads compete for CPU time.
 

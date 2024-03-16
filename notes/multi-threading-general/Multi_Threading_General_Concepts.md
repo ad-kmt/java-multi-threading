@@ -15,3 +15,7 @@
 ## Race Condition
 
 A race condition is a concurrency issue that occurs in a multithreaded or multiprocess environment when two or more threads or processes attempt to access and modify shared data simultaneously, leading to unpredictable and incorrect results.
+
+## Contention
+
+Contention refers to a situation where multiple threads are competing for the same shared resources, such as locks, memory, or CPU time. High contention occurs when many threads try to access the same resource simultaneously, leading to increased waiting times and reduced overall performance.

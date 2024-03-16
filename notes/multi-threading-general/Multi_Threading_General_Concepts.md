@@ -23,3 +23,12 @@ Contention refers to a situation where multiple threads are competing for the sa
 ## Deadlocks
 
 A deadlock is a situation in a multithreading environment where two or more threads are blocked forever, each waiting for the other to release a resource. Deadlocks are a common issue in concurrent programming and can lead to a complete standstill of an application.
+
+## Starvation
+
+Starvation is a problem in multithreaded environments where one or more threads are perpetually denied access to shared resources or the CPU, preventing them from making progress in their execution. 
+
+## Preemption
+Preemption is a fundamental concept in multitasking and multithreading environments where multiple tasks or threads compete for CPU time.
+
+It refers to the ability of the operating system or a scheduler to interrupt the currently executing task or thread and switch the CPU's attention to another task or thread that requires immediate processing.

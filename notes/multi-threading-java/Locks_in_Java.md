@@ -2,6 +2,15 @@
 ## Introduction
 Locks in Java are synchronization mechanisms that allow threads to have controlled access to shared resources. They are essential for preventing race conditions and ensuring thread safety in concurrent applications.
 
+Here's how it works:
+
+##### 1. Locking
+When a thread wants to execute a critical section of code, it tries to "lock" the object that contains that code. This is like saying, "I'm using this resource right now, please wait your turn."
+##### 2. Exclusive Access
+Once a thread has locked the object, no other thread can lock the same object until the first thread is done. This ensures that only one thread can use the resource at a time.
+##### 3. Unlocking
+When the thread is finished with the critical section, it "unlocks" the object, allowing other threads to lock it and use the resource.
+
 ## Intrinsic Locks vs. Explicit Locks
 
 ### Intrinsic Locks (Monitor Locks)
@@ -10,7 +19,7 @@ Intrinsic locks, also known as monitor locks, are built-in synchronization mecha
 
 #### Characteristics of Intrinsic Locks:
 
-- **Built-in Synchronization: **Intrinsic locks are built into every Java object and are used to synchronize access to object methods and blocks.
+- **Built-in Synchronization:** Intrinsic locks are built into every Java object and are used to synchronize access to object methods and blocks.
 - **Usage:** Synchronization is achieved using the synchronized keyword on methods or blocks.
 - **Reentrancy: **Intrinsic locks are reentrant, meaning a thread can acquire the same lock multiple times without deadlock if it already holds the lock.
 - **Wait-Notify Mechanism:** Intrinsic locks use `Object.wait()`, `Object.notify()`, and `Object.notifyAll()` methods for inter-thread communication.

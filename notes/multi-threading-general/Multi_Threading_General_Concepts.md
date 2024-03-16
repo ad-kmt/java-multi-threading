@@ -19,3 +19,7 @@ A race condition is a concurrency issue that occurs in a multithreaded or multip
 ## Contention
 
 Contention refers to a situation where multiple threads are competing for the same shared resources, such as locks, memory, or CPU time. High contention occurs when many threads try to access the same resource simultaneously, leading to increased waiting times and reduced overall performance.
+
+## Deadlocks
+
+A deadlock is a situation in a multithreading environment where two or more threads are blocked forever, each waiting for the other to release a resource. Deadlocks are a common issue in concurrent programming and can lead to a complete standstill of an application.

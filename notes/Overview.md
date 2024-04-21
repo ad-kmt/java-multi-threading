@@ -1,7 +1,6 @@
 # Overview of Multithreading
 
 ## Introduction
-Multithreading is a widespread programming and execution model that allows multiple threads to exist within the context of a single process, sharing the process's resources but able to execute independently.
 
 Lets start from the basics:
 

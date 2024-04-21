@@ -32,18 +32,6 @@ In technical terms, multitasking is the capability of an operating system (OS) t
 
 Multiprocessing refers to the use of multiple physical CPUs or cores within a computer to execute one or more tasks simultaneously. This approach can significantly speed up processing as tasks are genuinely executed in parallel.
 
-## Real-World Applications
-
-### Multitasking
-
-- **Operating Systems:** Like Windows or macOS, where users can browse the internet, listen to music, and edit documents all at once.
-- **Server Management:** Servers handling multiple requests from different clients at the same time without downtime.
-
-### Multiprocessing
-
-- **Scientific Computing:** Where complex calculations are spread out over many processors to decrease computation time.
-- **Video Rendering:** Where different frames might be processed in parallel to decrease the time needed to produce the final output.
-
 ## Conclusion
 
 While both multitasking and multiprocessing enhance the efficiency of using a computer's resources, the key difference lies in how tasks are actually processed—either appearing to be simultaneous through one CPU or genuinely concurrent through multiple CPUs.

@@ -5,7 +5,7 @@ Multithreading is a widespread programming and execution model that allows multi
 
 Lets start from the basics:
 
-- **Program**: A program is indeed a set of instructions that performs a specific task when executed by a computer/processor.
+- **Program**: A program is a set of instructions that performs a specific task when executed by a computer/processor.
 - **Process**: A process is an instance of a program that is being executed. It includes the program code, data, and resources it needs to execute. Each process provides the resources needed to execute a program. A process can have multiple threads.
 - **Thread**: A thread is the smallest unit of execution within a process. It is a single sequence of instructions that can be scheduled to run on a CPU core. Threads within the same process share the same memory space and resources, but each thread has its own stack and registers.
 - **Multithreading**: Multithreading refers to the ability of a CPU or a single core in a multi-core processor to execute multiple threads concurrently. It allows a program to perform multiple tasks concurrently, improving the overall performance and responsiveness of the program.

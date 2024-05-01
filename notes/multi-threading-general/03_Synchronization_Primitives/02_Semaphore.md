@@ -17,6 +17,9 @@ Semaphores manage concurrent access through the use of a counter which is initia
 - **Acquire**: When a thread wants to access a resource, it must first acquire a permit from the semaphore. If no permits are available, the thread blocks until one becomes available.
 - **Release**: After a thread finishes using the resource, it releases the permit back to the semaphore, increasing the number of available permits.
 
+![semaphore](https://github.com/ad-kmt/java-multi-threading/assets/28861412/658c08da-0f19-4b19-a211-69e241d2646d)
+
+
 ## Types of Semaphores
 
 1. **Binary Semaphore**: Semaphores with a permit count of 1. It only allows one thread to enter the critical section at a time.

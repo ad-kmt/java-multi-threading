@@ -2,7 +2,11 @@
 
 ## Introduction
 
-In the realm of operating systems, a deep understanding of processes is crucial, especially when considering advanced concepts like multithreading. Processes form the backbone of how programs are executed on modern computers, facilitating efficient, safe, and concurrent execution of multiple tasks. Grasping how processes operate, manage resources, and interact with each other underlies the effective use of multithreading, where multiple threads of a single process execute independently yet share the same process resources. This knowledge is not only fundamental for optimizing performance but also crucial for ensuring that applications run reliably and securely across different operating system environments.
+A process is a core concept in operating systems, essential for running programs on computers. It allows multiple tasks to run at the same time in a safe and efficient way. Understanding processes helps in:
+
+- **Execution**: Knowing how processes start, run, and stop.
+- **Resource Management**: Learning how processes use and manage system resources like memory and processing power.
+- **Interaction**: Understanding how processes communicate and coordinate with each other.
 
 **Example:**
 When you run a program on your computer, like a word processor or a web browser, each program is running as a separate process. This means it has its own allocated system resources (like memory and processing time) and operates independently of other processes.

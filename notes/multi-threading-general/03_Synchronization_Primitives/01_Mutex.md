@@ -13,6 +13,8 @@ When multiple threads attempt to access a shared resource that could lead to dat
 - **Lock**: Before entering the critical section, a thread must acquire the mutex's lock. If the lock is already held by another thread, the requesting thread will be blocked until the lock becomes available.
 - **Unlock**: Once the thread completes its task within the critical section, it must release the mutex's lock, allowing other threads to enter.
 
+![mutex](https://github.com/ad-kmt/java-multi-threading/assets/28861412/c62b43f8-7f0d-47e2-8f45-7ada5232fee4)
+
 ## Benefits of Using a Mutex
 
 - **Prevents Data Corruption**: By ensuring exclusive access to resources, mutexes prevent concurrent modifications that could lead to inconsistent or corrupted states.

@@ -11,8 +11,8 @@ public synchronized void incrementCounter() {
 When a method is declared as synchronized, it acquires an intrinsic lock (also known as a monitor lock) on the object for which it is invoked. This lock is automatically released when the method completes, either normally or through an exception.
 
 ## Locking Mechanism
-**Object-Level Lock: **Each object in Java has an associated monitor lock. When a thread enters a synchronized instance method, it acquires the lock on the object instance (this). For static synchronized methods, the thread acquires the lock on the class object (Class object).
-**Reentrant Locking: **The intrinsic lock is reentrant, meaning that the same thread can acquire the same lock multiple times without causing a deadlock.
+- **Object-Level Lock:** Each object in Java has an associated monitor lock. When a thread enters a synchronized instance method, it acquires the lock on the object instance (this). For static synchronized methods, the thread acquires the lock on the class object (Class object).
+- **Reentrant Locking:** The intrinsic lock is reentrant, meaning that the same thread can acquire the same lock multiple times without causing a deadlock.
 
 ## Synchronized Methods and Multiple Threads
 If two or more synchronized methods are defined in a class, only one thread can execute any of these methods at a time for a given object instance. Other threads attempting to execute any synchronized method on the same object will be blocked until the current thread releases the lock.

@@ -21,7 +21,7 @@ Intrinsic locks, also known as monitor locks, are built-in synchronization mecha
 
 - **Built-in Synchronization:** Intrinsic locks are built into every Java object and are used to synchronize access to object methods and blocks.
 - **Usage:** Synchronization is achieved using the synchronized keyword on methods or blocks.
-- **Reentrancy: **Intrinsic locks are reentrant, meaning a thread can acquire the same lock multiple times without deadlock if it already holds the lock.
+- **Reentrancy:** Intrinsic locks are reentrant, meaning a thread can acquire the same lock multiple times without deadlock if it already holds the lock.
 - **Wait-Notify Mechanism:** Intrinsic locks use `Object.wait()`, `Object.notify()`, and `Object.notifyAll()` methods for inter-thread communication.
 - **Limitations**: Intrinsic locks do not support advanced features like lock fairness, interruptible lock acquisition, or try-lock capabilities.
 
